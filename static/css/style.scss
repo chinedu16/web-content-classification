@@ -110,3 +110,17 @@ nav .active {
 .user_entry {
   margin-top: 40px;
 }
+
+.user_entry textarea {
+  border: 1px solid lightseagreen;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.user_entry textarea:focus , .user_entry textarea:active{
+  border: 1px solid lightseagreen;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
