@@ -14,6 +14,22 @@ def new_route():
 def dashboard():
   return render_template('dashboard.html')
 
+@app.route('/dataset')
+def dataset():
+  return render_template('dataset.html')
+
+@app.route('/categories')
+def categories():
+  return render_template('categories.html')
+
+@app.route('/statistics')
+def statistics():
+  return render_template('statistics.html')
+
+@app.route('/about')
+def about():
+  return render_template('about.html')
+
 @app.route('/user/<username>')
 def show_user_profile(username):
     return 'User %s' % username

@@ -1,7 +1,7 @@
 <html>
   <head>
     <link rel= "stylesheet" type= "text/css" href= "{{url_for('static',filename='css/style.scss') }}">
-    <title>Duke - Project - Dashboard</title>
+    <title>Dataset</title>
   </head>
   <body>
     <div class="main-header">
@@ -12,9 +12,9 @@
         </div>
         <div class="menu">
           <nav>
-            <a class="active">Dashboard</a>
+            <a href="{{url_for('dashboard') }}">Dashboard</a>
             <a href="{{url_for('categories') }}">Categories</a>
-            <a href="{{url_for('dataset') }}">Dataset</a>
+            <a href="{{url_for('dataset') }}" class="active">Dataset</a>
             <a href="{{url_for('statistics') }}">Statistics</a>
             <a href="{{url_for('about') }}">About</a>
           </nav>
@@ -28,7 +28,7 @@
       <!-- content -->
 
       <div class="content">
-        here is <thead></thead>
+        Dataset
       </div>
     </div>
   </body>
