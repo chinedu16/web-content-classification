@@ -39,12 +39,16 @@
           <h3>Paste Test data</h3>
           <span>Enter content </span>
           <div class="user_entry">
-              <textarea placeholder="Paste here" rows="10" cols="50"></textarea>
+              <form method="POST">
+                <textarea name="text" placeholder="Paste here" rows="10" cols="50"></textarea>  
+                <input type="submit">
+              </form>
           </div>
         </div>
         <div class="item item-3">
           <h3 style="color: white;">Results</h3>
           <span>Results is displayed here</span>
+          <span>{{pred | safe}}</span>
         </div>
       </div>
     </div>

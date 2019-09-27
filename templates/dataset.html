@@ -27,8 +27,131 @@
       </div>
       <!-- content -->
 
-      <div class="content">
-        Dataset
+      <div class="content" style="display: block;">
+        <h1>Legend</h1>
+        <div class="item" style="height: 300px;overflow: scroll;">
+          <div>
+              <table border="1" class="dataframe">
+                <thead>
+                  <tr style="text-align: right;">
+                    <th></th>
+                    <th>categories</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>0</th>
+                    <td>alt.atheism</td>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <td>comp.graphics</td>
+                  </tr>
+                  <tr>
+                    <th>2</th>
+                    <td>comp.os.ms-windows.misc</td>
+                  </tr>
+                  <tr>
+                    <th>3</th>
+                    <td>comp.sys.ibm.pc.hardware</td>
+                  </tr>
+                  <tr>
+                    <th>4</th>
+                    <td>comp.sys.mac.hardware</td>
+                  </tr>
+                  <tr>
+                    <th>5</th>
+                    <td>comp.windows.x</td>
+                  </tr>
+                  <tr>
+                    <th>6</th>
+                    <td>misc.forsale</td>
+                  </tr>
+                  <tr>
+                    <th>7</th>
+                    <td>rec.autos</td>
+                  </tr>
+                  <tr>
+                    <th>8</th>
+                    <td>rec.motorcycles</td>
+                  </tr>
+                  <tr>
+                    <th>9</th>
+                    <td>rec.sport.baseball</td>
+                  </tr>
+                  <tr>
+                    <th>10</th>
+                    <td>rec.sport.hockey</td>
+                  </tr>
+                  <tr>
+                    <th>11</th>
+                    <td>sci.crypt</td>
+                  </tr>
+                  <tr>
+                    <th>12</th>
+                    <td>sci.electronics</td>
+                  </tr>
+                  <tr>
+                    <th>13</th>
+                    <td>sci.med</td>
+                  </tr>
+                  <tr>
+                    <th>14</th>
+                    <td>sci.space</td>
+                  </tr>
+                  <tr>
+                    <th>15</th>
+                    <td>soc.religion.christian</td>
+                  </tr>
+                  <tr>
+                    <th>16</th>
+                    <td>talk.politics.guns</td>
+                  </tr>
+                  <tr>
+                    <th>17</th>
+                    <td>talk.politics.mideast</td>
+                  </tr>
+                  <tr>
+                    <th>18</th>
+                    <td>talk.politics.misc</td>
+                  </tr>
+                  <tr>
+                    <th>19</th>
+                    <td>talk.religion.misc</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+
+        <h1>Main Dataset</h1>
+        <div class="item" style="height: 300px;overflow: scroll;">
+          <div>
+            {{main.to_html()| safe}}
+          </div>
+        </div>
+
+        <h1>Test</h1>
+        <div class="item" style="height: 300px;overflow: scroll;">
+          <div>
+            {{test.to_html()| safe}}
+          </div>
+        </div>
+        
+        <h1>Train</h1>
+        <div class="item" style="height: 300px;overflow: scroll;">
+          <div>
+            {{train.to_html()| safe}}
+          </div>
+        </div>
+
+        <h1>Predictions</h1>
+        <div class="item" style="height: 300px;overflow: scroll;">
+          <div>
+            {{main.to_html()| safe}}
+          </div>
+        </div>
       </div>
     </div>
   </body>

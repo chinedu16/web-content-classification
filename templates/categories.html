@@ -28,7 +28,9 @@
       <!-- content -->
 
       <div class="content">
-        Categories
+        <div class="item">
+          {{categories.to_html()| safe}}
+        </div>
       </div>
     </div>
   </body>

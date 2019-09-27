@@ -27,8 +27,53 @@
       </div>
       <!-- content -->
 
-      <div class="content">
-        Statistics
+      <div class="content" style="display: block">
+        <div class="grid">
+          <div>
+            <label>Main Dataset Number</label>
+            <p>{{len | safe}}</p>
+          </div>
+          <div>
+            <label>Number of categories</label>
+            <p>{{categories | safe}}</p>
+          </div>
+          <div>
+            <label>Train Dataset and Shape</label>
+            <p>{{lentrain | safe}}</p>
+          </div>
+          <div>
+            <label>Test Dataset and Shape</label>
+            <p>{{lentest | safe}}</p>
+          </div>
+          <div>
+            <label>Accuracy</label>
+            <p>{{accuracy | safe}}%</p>
+          </div>
+          <div>
+            <label>Duration</label>
+            <p>{{duration | safe}}sec</p>
+          </div>
+          <div>
+            <label>FI score</label>
+            <p>{{cl | safe}}</p>
+          </div>
+          <div>
+            <label>Log Loss</label>
+            <p>23456</p>
+          </div>
+          <div>
+            <label>Precision</label>
+            <p>23456</p>
+          </div>
+          <div>
+            <label>Recall</label>
+            <p>23456</p>
+          </div>
+          <div>
+            <label>Report</label>
+            <p>23456</p>
+          </div>
+        </div> 
       </div>
     </div>
   </body>
