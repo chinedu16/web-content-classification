@@ -124,3 +124,33 @@ nav .active {
   border-radius: 10px;
   outline: none;
 }
+
+.item table {
+  width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 17rem 17rem 17rem 17rem;
+  grid-template-rows: 15rem 15rem 15rem;
+  grid-gap: 20px;
+}
+
+.grid div {
+  padding: 10px 20px;
+  box-shadow: 2px 4px 20px -4px rgba(0,0,0,.1);
+  background: white;
+  border-radius: 10px;
+}
+
+.grid label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.grid p {
+  font-size: 60px;
+  font-weight: bolder;
+  line-height: 30px;
+}
