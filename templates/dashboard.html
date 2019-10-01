@@ -30,25 +30,29 @@
       <div class="content">
         <div class="item item-1">
           <h3>Upload Test Data</h3>
-          <span>Upload bunch of test data to classify</span>
+          <span>Upload URL of test data to classify</span>
           <div class="user_entry">
-              <input type="file" name="" id="">
+            <form method="POST">
+              <input name="url_text" placeholder="Paste url here" ></input>  
+              <input type="submit" name="submit_url" value="Do Something">
+            </form>
           </div>
         </div>
         <div class="item item-2">
           <h3>Paste Test data</h3>
           <span>Enter content </span>
           <div class="user_entry">
-              <form method="POST">
-                <textarea name="text" placeholder="Paste here" rows="10" cols="50"></textarea>  
-                <input type="submit">
-              </form>
+            <form method="POST">
+              <textarea name="text" placeholder="Paste here" rows="10" cols="50"></textarea>  
+              <input type="submit" name="submit_user" value="Do Something Else">
+            </form>
           </div>
         </div>
         <div class="item item-3">
           <h3 style="color: white;">Results</h3>
-          <span>Results is displayed here</span>
-          <span>{{pred | safe}}</span>
+          <span>The category of the article is </span>
+          <br>
+          <span style="display: block; font-size: 20px; font-weight: 900;">{{pred | safe}}</span>
         </div>
       </div>
     </div>
