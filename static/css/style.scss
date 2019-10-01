@@ -150,7 +150,23 @@ nav .active {
 }
 
 .grid p {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bolder;
   line-height: 30px;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color:  whitesmoke
 }
